@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Edu AU VIC WA NT Hand", cursive, sans-serif;
+    background-color: #3B4252;
+    color: white;
+
+}
+
+#color,
+#font,
+#text_style {
+    border: 3px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    width: 75%;
+    padding: 60px 50px;
+    margin: 20px auto;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+}
+
+.theme {
+    --border_thickness: 2px;
+    --border_color: hsl(219, 28%, 0%);
+    margin: 20px auto;
+}
+
+
+.palette {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.color {
+    display: inline-block;
+    max-width: 135px;
+    max-height: 135px;
+    min-width: 117px;
+    min-height: 117px;
+
+    width: 10vw;
+    height: 10vh;
+    background-color: wheat;
+    border-top: var(--border_thickness) solid var(--border_color);
+    border-bottom: var(--border_thickness) solid var(--border_color);
+}
+
+.color.first {
+    border-left: var(--border_thickness) solid var(--border_color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.color.last {
+    border-right: var(--border_thickness) solid var(--border_color);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.color_container p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.theme h4 {
+    text-align: center;
+    font-size: 2em;
+}
+
+h3 {
+    text-align: center;
+    font-size: 3em;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 100px;
+    text-decoration: underline;
+    word-spacing: 0.1em;
+}
+
+
+.font_type {
+    margin: 50px
+}
+
+.font_type p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2em;
+}
+
+.font_type h5 {
+    text-align: center;
+    font-size: 2.3em;
+    text-decoration: underline;
+}
+
+.font_type.roboto * {
+    font-family: "Roboto", sans-serif;
+}
+
+.bold {
+    font-weight: 750;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.font_type.work_sans * {
+    font-family: "Work Sans", sans-serif;
+}
+
+.rule{
+    margin:70px;
+}
+
+.rule * {
+    font-family: monospace;
+}
+
+.rule h5 {
+    text-align: left;
+    font-size: 4em;
+}
+
+.rule ul li p {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 2em;
+    text-transform: capitalize;
+}
+
+.rule ul li::marker {
+    content: "• ";
+    font-size: 2.5em;
+}
+.rule ul li.empty::marker{
+    content: "  ";
+}
+
